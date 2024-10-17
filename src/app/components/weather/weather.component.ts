@@ -15,9 +15,15 @@ export class WeatherComponent implements OnInit {
   constructor(private httpClient: HttpClient) {
   }
 
-private apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=Munich,de&units=metric&APPID=faf17d6bfe1477a97755d5134779e59c';
+  private apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=Munich,de&units=metric&APPID=faf17d6bfe1477a97755d5134779e59c';
 
   ngOnInit(): void {
+    /*const weatherObservable: Observable<any> = this.httpClient.get<HttpResponse<WeatherApiResponse>>(this.apiUrl, {observe: 'response'})
+    weatherObservable.pipe(
+      tap((response: HttpResponse<WeatherApiResponse>) => console.info('WeatherData from server', response)),
+      map(response => response.body),
+      map(responseFromServer => responseFromServer.main)
+    ).subscribe((response: WeatherData) => this.weatherData = response)*/
     this.httpClient.get<WeatherApiResponse>(this.apiUrl).subscribe(response => this.weather = response.main)
   }
 

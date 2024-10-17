@@ -30,7 +30,9 @@ describe('HelloClickComponent', () => {
 
   it('emulate click', () => {
     expect(component.buttonWasClicked).toBeFalsy();
+
     fixture.debugElement.query(By.css('button')).nativeElement.click();
+
     expect(component.buttonWasClicked).toBeTruthy();
     fixture.detectChanges(true);
     const paragraph = fixture.debugElement.query(By.css('p')).nativeElement;

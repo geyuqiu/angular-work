@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Weather } from '../../models/weather';
 import { HttpClient } from '@angular/common/http';
+import { WeatherService } from '../../services/weather.service';
 
 @Component({
   selector: 'app-weather',
@@ -10,19 +11,13 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './weather.component.scss'
 })
 export class WeatherComponent implements OnInit {
-  weather: Weather = {} as Weather;
+  weather = {} as Weather;
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private weatherService: WeatherService) {
   }
-
-  private apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=Munich,de&units=metric&APPID=faf17d6bfe1477a97755d5134779e59c';
 
   ngOnInit(): void {
-    this.httpClient.get<WeatherApiResponse>(this.apiUrl)
-      .subscribe(response => this.weather = response.main)
+    this.weatherService.fetchWeather().subscribe(
+      (weather: Weather) => this.weather = weather);
   }
-}
-
-interface WeatherApiResponse {
-  main: Weather
 }

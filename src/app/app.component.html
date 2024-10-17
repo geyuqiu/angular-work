@@ -1,6 +1,17 @@
-<main role="main">
-  <button class="btn btn-primary" (click)="navigateProgrammatically('/weather')">navigate to Weather</button>
-  <button class="btn btn-dark" (click)="navigateProgrammatically('/hello')">navigate to Hello</button>
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Example</a>
+</nav>
+<main role="main" class="container">
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-primary" (click)="navigateProgrammatically('/weather')">navigate to Weather</button>
+      <button class="btn btn-dark" (click)="navigateProgrammatically('/hello')">navigate to Hello</button>
+      <button class="btn btn-secondary" (click)="navigateProgrammatically('/reactive')">navigate to Hello Reactive Form</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </main>
-
-<router-outlet></router-outlet>

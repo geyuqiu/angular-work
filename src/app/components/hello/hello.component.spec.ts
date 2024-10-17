@@ -25,6 +25,18 @@ describe('HelloComponent', () => {
     const fixture = TestBed.createComponent(HelloComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('p')?.textContent).toContain('hello works!');
+    expect(compiled.querySelector('p')?.textContent).toContain('Hello World!');
   });
+
+  describe('displayName', () => {
+    it('returns "World" as displayName when no name is given', () => {
+      expect(component.displayName).toEqual('World');
+    });
+
+    it('returns "Sebastian" when given name is "Sebastian"', () => {
+      const name = 'Sebastian';
+      component.name = name;
+      expect(component.displayName).toEqual(name);
+    });
+  })
 });

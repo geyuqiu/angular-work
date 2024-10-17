@@ -12,7 +12,7 @@ export class HelloComponent {
   @Input()
   name: string = '';
 
-  get displayName(): string {
+  displayName(): string {
     if (this.name) {
       return this.name;
     }

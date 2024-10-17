@@ -1,2 +1,5 @@
 <button class="btn btn-secondary" (click)="sayHello()">say hello!</button>
-<p *ngIf="buttonWasClicked">Hello World</p>
+@if (buttonWasClicked) {
+  <p>Hello World</p>
+}
+

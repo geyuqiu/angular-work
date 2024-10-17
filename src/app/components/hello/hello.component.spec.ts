@@ -25,7 +25,7 @@ describe('HelloComponent', () => {
     const fixture = TestBed.createComponent(HelloComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('p')?.textContent).toContain('Hello World');
+    expect(compiled.querySelector('p')?.textContent).toContain('Hello World!');
   });
 
   describe('displayName', () => {
@@ -35,7 +35,7 @@ describe('HelloComponent', () => {
 
     it('returns "Sebastian" when given name is "Sebastian"', () => {
       const name = 'Sebastian';
-      component['name'] = name;
+      component.name = name;
       expect(component.displayName).toEqual(name);
     });
   })

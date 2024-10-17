@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
 import { NameInputComponent } from '../name-input/name-input.component';
 
 @Component({
@@ -11,16 +10,8 @@ import { NameInputComponent } from '../name-input/name-input.component';
   templateUrl: './hello-input.component.html',
   styleUrl: './hello-input.component.scss'
 })
-export class HelloInputComponent implements OnInit{
+export class HelloInputComponent {
   nameFromInput: string = '';
-
-  constructor(private route: ActivatedRoute) { }
-
-  ngOnInit(): void {
-    this.route.queryParams.subscribe(params => {
-      this.nameFromInput = params['name'];
-    });
-  }
 
   handleNewName(newNameEvent: string) {
     this.nameFromInput = newNameEvent;

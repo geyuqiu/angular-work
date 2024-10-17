@@ -7,7 +7,7 @@ import { map, Observable, tap } from 'rxjs';
   providedIn: 'root'
 })
 export class WeatherService {
-  private readonly apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=Munich,de&units=metric&APPID=faf17d6bfe1477a97755d5134779e59c';
+  private readonly apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=Munich,de&units=metric';
 
   constructor(private httpClient: HttpClient) { }
 

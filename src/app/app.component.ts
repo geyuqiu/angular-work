@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { HelloComponent } from './components/hello/hello.component';
 import { HelloListComponent } from './components/hello-list/hello-list.component';
 import { HelloClickComponent } from './components/hello-click/hello-click.component';
@@ -17,4 +17,11 @@ import { HelloReactiveComponent } from './components/hello-reactive/hello-reacti
 })
 export class AppComponent {
   title = 'angular18';
+
+  constructor(private router: Router) {
+  }
+
+  navigateProgrammatically(path: string) {
+    this.router.navigate([path]);
+  }
 }

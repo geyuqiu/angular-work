@@ -1,13 +1,6 @@
-<nav class="navbar navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Example</a>
-</nav>
-<main role="main" class="container">
-  <app-hello [name]="title"/>
-  <app-hello />
-  <app-hello-list />
-  <app-hello-click /> <br />
-  <br />
-  <app-hello-input />
-  <app-weather />
-  <app-hello-reactive />
+<main role="main">
+  <button class="btn btn-primary" (click)="navigateProgrammatically('/weather')">navigate to Weather</button>
+  <button class="btn btn-dark" (click)="navigateProgrammatically('/hello')">navigate to Hello</button>
 </main>
+
+<router-outlet></router-outlet>

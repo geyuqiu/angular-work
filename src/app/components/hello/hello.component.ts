@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './hello.component.scss'
 })
 export class HelloComponent {
-
+  name = 'Sebastian';
 }

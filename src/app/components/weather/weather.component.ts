@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './weather.component.scss'
 })
 export class WeatherComponent implements OnInit {
-  weather: Weather;
+  weather: Weather = {} as Weather;
 
   constructor(private httpClient: HttpClient) {
   }
@@ -24,7 +24,8 @@ export class WeatherComponent implements OnInit {
       map(response => response.body),
       map(responseFromServer => responseFromServer.main)
     ).subscribe((response: WeatherData) => this.weatherData = response)*/
-    this.httpClient.get<WeatherApiResponse>(this.apiUrl).subscribe(response => this.weather = response.main)
+    this.httpClient.get<WeatherApiResponse>(this.apiUrl)
+      .subscribe(response => this.weather = response.main)
   }
 
 }

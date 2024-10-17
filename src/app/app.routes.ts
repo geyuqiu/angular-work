@@ -7,7 +7,6 @@ export const routes: Routes = [
   {
     path: 'weather',
     component: WeatherComponent,
-    // canActivate: [AuthenticatedGuardFn]
   },
   {path: '**', redirectTo: ''}
 ];

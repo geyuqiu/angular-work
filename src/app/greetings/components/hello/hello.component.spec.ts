@@ -2,6 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HelloComponent } from './hello.component';
 import { By } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 describe('HelloComponent', () => {
   let component: HelloComponent;

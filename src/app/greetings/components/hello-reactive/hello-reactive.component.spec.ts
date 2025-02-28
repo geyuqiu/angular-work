@@ -30,7 +30,7 @@ describe('HelloReactiveComponent', () => {
     const submitButton = fixture.debugElement.query(By.css('button')).nativeElement as HTMLElement;
     submitButton.click();
     fixture.detectChanges();
-    expect(component.userName).toEqual('Danny');
+    expect(component.name).toEqual('Danny');
     const greeting: HTMLElement = fixture.debugElement.query(By.css('#greeting')).nativeElement;
     expect(greeting.innerText).toEqual('Hallo Danny');
   });

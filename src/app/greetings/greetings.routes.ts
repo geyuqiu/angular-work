@@ -5,7 +5,7 @@ import { HelloReactiveComponent } from './components/hello-reactive/hello-reacti
 export const helloRoutes: Routes = [
   {path: '', component: HelloComponent},
   {
-    path: 'reactive',
+    path: 'reactive/:name',
     component: HelloReactiveComponent,
   }
 ]

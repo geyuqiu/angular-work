@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
-import { forbiddenNameValidator } from '../../validators/HelloValidators';
+import { forbiddenNameValidator } from '../../../validators/HelloValidators';
 
 @Component({
   selector: 'app-hello-reactive',

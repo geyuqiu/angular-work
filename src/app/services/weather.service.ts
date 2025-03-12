@@ -12,7 +12,8 @@ export class WeatherService {
   constructor(private httpClient: HttpClient) { }
 
   fetchWeather():Observable<Weather>{
-    const weatherObservable: Observable<any> = this.httpClient.get<HttpResponse<WeatherApiResponse>>(this.apiUrl, {observe: 'response'})
+    const weatherObservable: Observable<any>
+      = this.httpClient.get<HttpResponse<WeatherApiResponse>>(this.apiUrl, {observe: 'response'})
     return weatherObservable.pipe(
       tap((response: HttpResponse<WeatherApiResponse>) => console.info('Weather from server', response)),
       map(response => response.body),

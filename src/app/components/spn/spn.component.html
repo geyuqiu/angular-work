@@ -1,1 +1,6 @@
-<p>spn works!</p>
+@for (spn of spnSignal(); track spn) {
+  <p>{{ spn.adress}}</p>
+} @empty {
+  <p>There are no spns.</p>
+}
+

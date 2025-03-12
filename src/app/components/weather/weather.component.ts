@@ -1,4 +1,4 @@
-import { Component, OnInit, Signal } from '@angular/core';
+import { Component, OnInit, signal, Signal } from '@angular/core';
 import { Weather } from '../../models/weather';
 import { WeatherService } from '../../services/weather.service';
 import { EMPTY, Observable } from 'rxjs';
@@ -17,9 +17,10 @@ import { toSignal } from '@angular/core/rxjs-interop';
   styleUrl: './weather.component.scss'
 })
 export class WeatherComponent {
-  weather: Signal<Weather | undefined>;
+  weatherSignal: Signal<Weather | undefined>
+    = signal<Weather | undefined>(undefined);
 
   constructor(private weatherService: WeatherService) {
-    this.weather = toSignal(this.weatherService.fetchWeather());
+    this.weatherSignal = toSignal(this.weatherService.fetchWeather());
   }
 }

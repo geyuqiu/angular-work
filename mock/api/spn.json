@@ -1,0 +1,173 @@
+[
+  {
+    "id": "0",
+    "plz": "01477",
+    "title": "Autohaus Walther GmbH & Co. KG",
+    "adress": "Tannebergstr. 12, 01477 Arnsdorf",
+    "phone": "035200-2500"
+  },
+  {
+    "id": "1",
+    "plz": "01558",
+    "title": "Unfallinstandsetzung Püschel",
+    "adress": "An der Turnhalle 13, 01558 Grossenhain",
+    "phone": "03522-502553"
+  },
+  {
+    "id": "2",
+    "plz": "01591",
+    "title": "Autolackiererei Strohbach GmbH & Co. KG",
+    "adress": "Torgauer Str. 1, 01591 Riesa",
+    "phone": "03525-893881"
+  },
+  {
+    "id": "3",
+    "plz": "01744",
+    "title": "LKW Service Pötzsch GmbH",
+    "adress": "Rabenauer Str. 29b, 01744 Dippoldiswalde",
+    "phone": "03504-647423"
+  },
+  {
+    "id": "4",
+    "plz": "01796",
+    "title": "Bernd Forker GmbH",
+    "adress": "Dresdner Str. 8, 01796 Pirna",
+    "phone": "03501-446592"
+  },
+  {
+    "id": "5",
+    "plz": "01917",
+    "title": "Hommel Kfz-Instandsetzung und Autolackierung",
+    "adress": "An der Nordbahn 5, 01917 Kamenz",
+    "phone": "03578-310007"
+  },
+  {
+    "id": "6",
+    "plz": "02627",
+    "title": "Zimmermann Karosserie & Lack GmbH",
+    "adress": "Scheckwitz 19a, 02627 Kubschütz",
+    "phone": "035939-81546"
+  },
+  {
+    "id": "7",
+    "plz": "02829",
+    "title": "Dussa GmbH",
+    "adress": "Girbigsdorfer Str. 21, 02829 Markersdorf",
+    "phone": "03581-74530"
+  },
+  {
+    "id": "8",
+    "plz": "02977",
+    "title": "\"Karosserie- und Lackierbetrieb \"\"Träume in Lack\"\" GmbH\"",
+    "adress": "Str. zum Industriegelände 33, 02977 Hoyerswerda",
+    "phone": "03571-42450"
+  },
+  {
+    "id": "9",
+    "plz": "02979",
+    "title": "\"Karosserie- und Lackierbetrieb \"\"Träume in Lack\"\" GmbH\"",
+    "adress": "Alte Berliner Str. 1, 02979 Elsterheide",
+    "phone": "03571-42450"
+  },
+  {
+    "id": "10",
+    "plz": "03058",
+    "title": "Auto Service Konetzke GmbH & Co. KG",
+    "adress": "Alte Schulstr. 11, 03058 Neuhausen/Spree",
+    "phone": "035605-40329"
+  },
+  {
+    "id": "11",
+    "plz": "04319",
+    "title": "Böge GmbH Mechanik, Karosserie & Lack",
+    "adress": "Kleinpösnaer Anger 6, 04319 Leipzig",
+    "phone": "034291-21133"
+  },
+  {
+    "id": "12",
+    "plz": "04435",
+    "title": "Karosserie Lackierzentrum Claudia & Jörg Kluge GbR",
+    "adress": "Kötschlitzer Str. 9, 04435 Schkeuditz",
+    "phone": "034205-99842"
+  },
+  {
+    "id": "13",
+    "plz": "04442",
+    "title": "Karosserie Lackierzentrum Claudia & Jörg Kluge GbR",
+    "adress": "Schlosserstr. 4, 04442 Zwenkau",
+    "phone": "034203-31970"
+  },
+  {
+    "id": "14",
+    "plz": "04654",
+    "title": "Dietmar Etzold Karosseriefachbetrieb und Lackiererei",
+    "adress": "Ringstr. 2, 04654 Frohburg",
+    "phone": "034348-51462"
+  },
+  {
+    "id": "15",
+    "plz": "04703",
+    "title": "Autolackiererei Menzel",
+    "adress": "An der Muldenwiese 8, 04703 Leisnig",
+    "phone": "034321-12510"
+  },
+  {
+    "id": "16",
+    "plz": "04720",
+    "title": "Höschler Karosserie und Lackierzentrum e.K.",
+    "adress": "Oswald-Greiner-Str. 4, 04720 Döbeln",
+    "phone": "03431-71650"
+  },
+  {
+    "id": "17",
+    "plz": "04860",
+    "title": "Autohaus Michael Glaubrecht e.K.",
+    "adress": "Döbernsche Str. 2a, 04860 Torgau",
+    "phone": "03421-773280"
+  },
+  {
+    "id": "18",
+    "plz": "06193",
+    "title": "Cars & Colours GmbH",
+    "adress": "Carl-Benz-Str. 1, 06193 Petersberg",
+    "phone": "034606-38190"
+  },
+  {
+    "id": "19",
+    "plz": "06217",
+    "title": "Klaus Jägernitz",
+    "adress": "Geusaer Str. 81a, 06217 Blösien",
+    "phone": "03461-525638"
+  },
+  {
+    "id": "20",
+    "plz": "06249",
+    "title": "Autohaus Reinicke GmbH",
+    "adress": "Waldhausweg 2, 06249 Mücheln (Geiseltal)",
+    "phone": "034632-3140"
+  },
+  {
+    "id": "21",
+    "plz": "06449",
+    "title": "Autohaus Schalk GmbH",
+    "adress": "Ottostr. 9, 06449 Aschersleben",
+    "phone": "03473-808400"
+  },
+  {
+    "id": "22",
+    "plz": "06493",
+    "title": "Steffen Beier & Detlef Seidel GbR Autolackiererei",
+    "adress": "Poststr. 99, 06493 Ballenstedt",
+    "phone": "039483-395"
+  },
+  {
+    "id": "23",
+    "plz": "06796",
+    "title": "AW-Technik GmbH",
+    "adress": "Max-Planck-Str. 23, 06796 Sandersdorf-Brehna",
+    "phone": "034954-44590"
+  }
+]
+
+
+

@@ -13,8 +13,4 @@ export class AppComponent {
 
   constructor(private router: Router) {
   }
-
-  navigateProgrammatically(path: string) {
-    this.router.navigate([path]);
-  }
 }

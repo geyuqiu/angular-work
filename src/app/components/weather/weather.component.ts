@@ -1,7 +1,6 @@
-import { Component, OnInit, signal, Signal } from '@angular/core';
+import { Component, signal, Signal } from '@angular/core';
 import { Weather } from '../../models/weather';
 import { WeatherService } from '../../services/weather.service';
-import { EMPTY, Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 import { CelsiusPipe } from '../../pipes/celsius.pipe';
 import { toSignal } from '@angular/core/rxjs-interop';

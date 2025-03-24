@@ -36,11 +36,15 @@ describe('HelloReactiveComponent', () => {
   it('greet Danny', () => {
     component.nameForm.controls['name'].setValue('Danny');
     fixture.detectChanges();
-    const submitButton = fixture.debugElement.query(By.css('button')).nativeElement as HTMLElement;
+    const submitButton = fixture.debugElement
+      .query(By.css('button')).nativeElement as HTMLElement;
+
     submitButton.click();
     fixture.detectChanges();
+
     expect(component.name).toEqual('Danny');
-    const greeting: HTMLElement = fixture.debugElement.query(By.css('#greeting')).nativeElement;
+    const greeting: HTMLElement = fixture.debugElement
+      .query(By.css('#greeting')).nativeElement;
     expect(greeting.innerText).toEqual('Hallo Danny');
   });
 

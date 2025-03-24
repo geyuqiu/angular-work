@@ -16,7 +16,7 @@ export class HelloReactiveComponent {
   submitted: boolean = false;
 
   constructor(private formBuilder: UntypedFormBuilder,
-              private readonly route: ActivatedRoute
+              private readonly activatedRoute: ActivatedRoute
   ) {
     this.nameForm = this.formBuilder.group({
       name: this.formBuilder.control(
@@ -25,8 +25,8 @@ export class HelloReactiveComponent {
       )
     });
 
-    console.log(this.route.params);
-    this.route.params.subscribe(
+    console.log(this.activatedRoute.params);
+    this.activatedRoute.params.subscribe(
       params => {
         if (params['name']) {
           this.nameForm.patchValue({name: params['name']});

@@ -6,6 +6,7 @@ export const routes: Routes = [
   {
     path: 'weather',
     component: SpnComponent,
+    // component: WeatherComponent,
   },
   {
     path: 'hello',

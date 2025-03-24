@@ -6,7 +6,8 @@ const formidable = require('formidable');
 const staticBasePath = './mock';
 const port = 8888;
 
-const mockServer = http.createServer((request, response) => {
+const mockServer
+  = http.createServer((request, response) => {
   try {
 
     if (request.url.indexOf('spn') > 0) {
